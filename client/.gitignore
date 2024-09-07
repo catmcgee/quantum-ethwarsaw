@@ -85,3 +85,7 @@ yarn-error.log
 **/*Cargo.lock
 /scripts/**/target/**
 /android/app/libs
+# Expo
+.expo
+dist/
+web-build/

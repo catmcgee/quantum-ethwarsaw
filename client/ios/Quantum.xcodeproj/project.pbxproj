@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* NoirReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NoirReactNativeTests.m */; };
+		00E356F31AD99517003FC87E /* quantumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* quantumTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19C841D752E3C136EB128A64 /* libPods-quantum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B3E62599C74754986ED349 /* libPods-quantum.a */; };
 		30824C7FA6D34A227C00226C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6EA6CE147429926A9ABA7539 /* PrivacyInfo.xcprivacy */; };
+		34C13FA555755CFCAE087EBD /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73680AE3718D945CAD5A58B /* ExpoModulesProvider.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		AADA4CBE4E91EF87EE9A44E3 /* libPods-NoirReactNative-NoirReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C93E6EBCDDBAEA616FDCC145 /* libPods-NoirReactNative-NoirReactNativeTests.a */; };
+		BAE8F4DB3333F52A034F9CF7 /* libPods-quantum-quantumTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA0CD2F052B833B30B12EF0 /* libPods-quantum-quantumTests.a */; };
 		C22D46782C4ABF340020284A /* Swoir in Frameworks */ = {isa = PBXBuildFile; productRef = C22D46772C4ABF340020284A /* Swoir */; };
 		C22D467B2C4AC2370020284A /* Swoir in Frameworks */ = {isa = PBXBuildFile; productRef = C22D467A2C4AC2370020284A /* Swoir */; };
 		C22D46842C4EC04A0020284A /* Swoir in Frameworks */ = {isa = PBXBuildFile; productRef = C22D46832C4EC04A0020284A /* Swoir */; };
@@ -35,7 +37,7 @@
 		C2E55DB22C49301500FADAF5 /* Swoir in Frameworks */ = {isa = PBXBuildFile; productRef = C2E55DB12C49301500FADAF5 /* Swoir */; };
 		C2E55DB52C49760100FADAF5 /* Swoir in Frameworks */ = {isa = PBXBuildFile; productRef = C2E55DB42C49760100FADAF5 /* Swoir */; };
 		C2E55DB82C49885200FADAF5 /* Swoir in Frameworks */ = {isa = PBXBuildFile; productRef = C2E55DB72C49885200FADAF5 /* Swoir */; };
-		F88F72695DD49222FCDCCD46 /* libPods-NoirReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3224B929C627011B4B14FB34 /* libPods-NoirReactNative.a */; };
+		F4BC39C007779FB8F9AD7B44 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780800CFA25CC7A14A3677 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,34 +46,36 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = NoirReactNative;
+			remoteInfo = quantum;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* NoirReactNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoirReactNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* quantumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quantumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* NoirReactNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoirReactNativeTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* NoirReactNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoirReactNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NoirReactNative/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = NoirReactNative/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NoirReactNative/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NoirReactNative/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NoirReactNative/main.m; sourceTree = "<group>"; };
-		3224B929C627011B4B14FB34 /* libPods-NoirReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoirReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EA6CE147429926A9ABA7539 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = NoirReactNative/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		809497316BDFB11B16180969 /* Pods-NoirReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoirReactNative.debug.xcconfig"; path = "Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NoirReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BDF0C67EAFC222F77B82E670 /* Pods-NoirReactNative-NoirReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoirReactNative-NoirReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* quantumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quantumTests.m; sourceTree = "<group>"; };
+		0D780800CFA25CC7A14A3677 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-quantum/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		0EA0CD2F052B833B30B12EF0 /* libPods-quantum-quantumTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quantum-quantumTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* quantum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quantum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = quantum/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = quantum/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = quantum/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = quantum/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = quantum/main.m; sourceTree = "<group>"; };
+		161F90A02A826BF1B923C3CB /* Pods-quantum-quantumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quantum-quantumTests.release.xcconfig"; path = "Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A5A0B5D94A11E8A8685331D /* Pods-quantum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quantum.release.xcconfig"; path = "Target Support Files/Pods-quantum/Pods-quantum.release.xcconfig"; sourceTree = "<group>"; };
+		6EA6CE147429926A9ABA7539 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = quantum/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = quantum/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8BB031DAAD3965E3EA3F929 /* Pods-quantum-quantumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quantum-quantumTests.debug.xcconfig"; path = "Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C22D46852C4EE1DF0020284A /* srs.local */ = {isa = PBXFileReference; lastKnownFileType = file; path = srs.local; sourceTree = "<group>"; };
-		C22D468D2C4FB5E30020284A /* NoirReactNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = NoirReactNative.entitlements; path = NoirReactNative/NoirReactNative.entitlements; sourceTree = "<group>"; };
+		C22D468D2C4FB5E30020284A /* quantum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = quantum.entitlements; path = quantum/quantum.entitlements; sourceTree = "<group>"; };
 		C273AF4E2B86595200991B29 /* NoirModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoirModule.swift; sourceTree = "<group>"; };
 		C273AF512B8659EF00991B29 /* NoirModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoirModule.m; sourceTree = "<group>"; };
-		C273AF572B865E9400991B29 /* NoirReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoirReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
-		C93E6EBCDDBAEA616FDCC145 /* libPods-NoirReactNative-NoirReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoirReactNative-NoirReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D42C7122C6BE3A55E473B642 /* Pods-NoirReactNative-NoirReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoirReactNative-NoirReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DC70EFB85C6D2E3A728A5931 /* Pods-NoirReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoirReactNative.release.xcconfig"; path = "Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative.release.xcconfig"; sourceTree = "<group>"; };
+		C273AF572B865E9400991B29 /* quantum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quantum-Bridging-Header.h"; sourceTree = "<group>"; };
+		D3F7F1A373E4519750629796 /* Pods-quantum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quantum.debug.xcconfig"; path = "Target Support Files/Pods-quantum/Pods-quantum.debug.xcconfig"; sourceTree = "<group>"; };
+		E2B3E62599C74754986ED349 /* libPods-quantum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quantum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F73680AE3718D945CAD5A58B /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-quantum-quantumTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AADA4CBE4E91EF87EE9A44E3 /* libPods-NoirReactNative-NoirReactNativeTests.a in Frameworks */,
+				BAE8F4DB3333F52A034F9CF7 /* libPods-quantum-quantumTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,20 +107,20 @@
 				C2E2EA4C2C3C34D400078AAB /* Swoir in Frameworks */,
 				C2D3FA932C7F57C7003AEFA7 /* Swoir in Frameworks */,
 				C2E55DB82C49885200FADAF5 /* Swoir in Frameworks */,
-				F88F72695DD49222FCDCCD46 /* libPods-NoirReactNative.a in Frameworks */,
+				19C841D752E3C136EB128A64 /* libPods-quantum.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* NoirReactNativeTests */ = {
+		00E356EF1AD99517003FC87E /* quantumTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* NoirReactNativeTests.m */,
+				00E356F21AD99517003FC87E /* quantumTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = NoirReactNativeTests;
+			path = quantumTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -127,10 +131,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* NoirReactNative */ = {
+		13B07FAE1A68108700A75B9A /* quantum */ = {
 			isa = PBXGroup;
 			children = (
-				C22D468D2C4FB5E30020284A /* NoirReactNative.entitlements */,
+				C22D468D2C4FB5E30020284A /* quantum.entitlements */,
 				C22D46852C4EE1DF0020284A /* srs.local */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -139,21 +143,30 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				C273AF4E2B86595200991B29 /* NoirModule.swift */,
-				C273AF572B865E9400991B29 /* NoirReactNative-Bridging-Header.h */,
+				C273AF572B865E9400991B29 /* quantum-Bridging-Header.h */,
 				C273AF512B8659EF00991B29 /* NoirModule.m */,
 				6EA6CE147429926A9ABA7539 /* PrivacyInfo.xcprivacy */,
 			);
-			name = NoirReactNative;
+			name = quantum;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				3224B929C627011B4B14FB34 /* libPods-NoirReactNative.a */,
-				C93E6EBCDDBAEA616FDCC145 /* libPods-NoirReactNative-NoirReactNativeTests.a */,
+				E2B3E62599C74754986ED349 /* libPods-quantum.a */,
+				0EA0CD2F052B833B30B12EF0 /* libPods-quantum-quantumTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5339430086A9E8C003401DBD /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				F83234EDF84C6333DF4E9AB2 /* quantum */,
+				D3119214A1F9925D18E044BE /* quantumTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -166,12 +179,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* NoirReactNative */,
+				13B07FAE1A68108700A75B9A /* quantum */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* NoirReactNativeTests */,
+				00E356EF1AD99517003FC87E /* quantumTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				5339430086A9E8C003401DBD /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -181,8 +195,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* NoirReactNative.app */,
-				00E356EE1AD99517003FC87E /* NoirReactNativeTests.xctest */,
+				13B07F961A680F5B00A75B9A /* quantum.app */,
+				00E356EE1AD99517003FC87E /* quantumTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,55 +204,73 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				809497316BDFB11B16180969 /* Pods-NoirReactNative.debug.xcconfig */,
-				DC70EFB85C6D2E3A728A5931 /* Pods-NoirReactNative.release.xcconfig */,
-				D42C7122C6BE3A55E473B642 /* Pods-NoirReactNative-NoirReactNativeTests.debug.xcconfig */,
-				BDF0C67EAFC222F77B82E670 /* Pods-NoirReactNative-NoirReactNativeTests.release.xcconfig */,
+				D3F7F1A373E4519750629796 /* Pods-quantum.debug.xcconfig */,
+				4A5A0B5D94A11E8A8685331D /* Pods-quantum.release.xcconfig */,
+				B8BB031DAAD3965E3EA3F929 /* Pods-quantum-quantumTests.debug.xcconfig */,
+				161F90A02A826BF1B923C3CB /* Pods-quantum-quantumTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D3119214A1F9925D18E044BE /* quantumTests */ = {
+			isa = PBXGroup;
+			children = (
+				F73680AE3718D945CAD5A58B /* ExpoModulesProvider.swift */,
+			);
+			name = quantumTests;
+			sourceTree = "<group>";
+		};
+		F83234EDF84C6333DF4E9AB2 /* quantum */ = {
+			isa = PBXGroup;
+			children = (
+				0D780800CFA25CC7A14A3677 /* ExpoModulesProvider.swift */,
+			);
+			name = quantum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* NoirReactNativeTests */ = {
+		00E356ED1AD99517003FC87E /* quantumTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NoirReactNativeTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "quantumTests" */;
 			buildPhases = (
-				4FC14678A824F43E6611401D /* [CP] Check Pods Manifest.lock */,
+				08F25DBB123FDB04FFD29D7B /* [CP] Check Pods Manifest.lock */,
+				63FA565ADA1E666390E7EC7D /* [Expo] Configure project */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				59B0B77DFD230C6E28F9EB7F /* [CP] Embed Pods Frameworks */,
-				2E5454A1851C8313556B5B9F /* [CP] Copy Pods Resources */,
+				80D479F3B9407E49755BD5A0 /* [CP] Embed Pods Frameworks */,
+				17C802C419039BF47CFFE7BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = NoirReactNativeTests;
-			productName = NoirReactNativeTests;
-			productReference = 00E356EE1AD99517003FC87E /* NoirReactNativeTests.xctest */;
+			name = quantumTests;
+			productName = quantumTests;
+			productReference = 00E356EE1AD99517003FC87E /* quantumTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* NoirReactNative */ = {
+		13B07F861A680F5B00A75B9A /* quantum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NoirReactNative" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "quantum" */;
 			buildPhases = (
-				D3481C7E79A0366FD3787866 /* [CP] Check Pods Manifest.lock */,
+				5D2EE4322647D6AEC6128C9A /* [CP] Check Pods Manifest.lock */,
+				5C59D800143BB01D7763DA0B /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				89B6D8E9EB5EA0DBB018A82E /* [CP] Embed Pods Frameworks */,
-				3FDB2925D108A121E7DB586A /* [CP] Copy Pods Resources */,
+				3BC91A287674931A5ADB6020 /* [CP] Embed Pods Frameworks */,
+				C27FDE0D35FF5D67839A17BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NoirReactNative;
+			name = quantum;
 			packageProductDependencies = (
 				C273AF442B86523F00991B29 /* Swoir */,
 				C2E2EA3F2C35FA2A00078AAB /* Swoir */,
@@ -257,8 +289,8 @@
 				C22D46882C4EED1B0020284A /* Swoir */,
 				C2D3FA922C7F57C7003AEFA7 /* Swoir */,
 			);
-			productName = NoirReactNative;
-			productReference = 13B07F961A680F5B00A75B9A /* NoirReactNative.app */;
+			productName = quantum;
+			productReference = 13B07F961A680F5B00A75B9A /* quantum.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +311,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NoirReactNative" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Quantum" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,8 +327,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* NoirReactNative */,
-				00E356ED1AD99517003FC87E /* NoirReactNativeTests */,
+				13B07F861A680F5B00A75B9A /* quantum */,
+				00E356ED1AD99517003FC87E /* quantumTests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,43 +369,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli')\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n";
 		};
-		2E5454A1851C8313556B5B9F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3FDB2925D108A121E7DB586A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4FC14678A824F43E6611401D /* [CP] Check Pods Manifest.lock */ = {
+		08F25DBB123FDB04FFD29D7B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,48 +386,67 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoirReactNative-NoirReactNativeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-quantum-quantumTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		59B0B77DFD230C6E28F9EB7F /* [CP] Embed Pods Frameworks */ = {
+		17C802C419039BF47CFFE7BA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative-NoirReactNativeTests/Pods-NoirReactNative-NoirReactNativeTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		89B6D8E9EB5EA0DBB018A82E /* [CP] Embed Pods Frameworks */ = {
+		3BC91A287674931A5ADB6020 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-quantum/Pods-quantum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-quantum/Pods-quantum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoirReactNative/Pods-NoirReactNative-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quantum/Pods-quantum-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3481C7E79A0366FD3787866 /* [CP] Check Pods Manifest.lock */ = {
+		5C59D800143BB01D7763DA0B /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-quantum/expo-configure-project.sh\"\n";
+		};
+		5D2EE4322647D6AEC6128C9A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -444,11 +461,64 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NoirReactNative-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-quantum-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63FA565ADA1E666390E7EC7D /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-quantum-quantumTests/expo-configure-project.sh\"\n";
+		};
+		80D479F3B9407E49755BD5A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quantum-quantumTests/Pods-quantum-quantumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27FDE0D35FF5D67839A17BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quantum/Pods-quantum-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quantum/Pods-quantum-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quantum/Pods-quantum-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -458,9 +528,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* NoirReactNativeTests.m in Sources */,
+				00E356F31AD99517003FC87E /* quantumTests.m in Sources */,
 				C273AF502B86595200991B29 /* NoirModule.swift in Sources */,
 				C273AF532B8659EF00991B29 /* NoirModule.m in Sources */,
+				34C13FA555755CFCAE087EBD /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +543,7 @@
 				C273AF522B8659EF00991B29 /* NoirModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				C273AF4F2B86595200991B29 /* NoirModule.swift in Sources */,
+				F4BC39C007779FB8F9AD7B44 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +552,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* NoirReactNative */;
+			target = 13B07F861A680F5B00A75B9A /* quantum */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -488,7 +560,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D42C7122C6BE3A55E473B642 /* Pods-NoirReactNative-NoirReactNativeTests.debug.xcconfig */;
+			baseConfigurationReference = B8BB031DAAD3965E3EA3F929 /* Pods-quantum-quantumTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,7 +569,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = NoirReactNativeTests/Info.plist;
+				INFOPLIST_FILE = quantumTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,24 +581,25 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NoirReactNativeTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "quantumTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoirReactNative.app/NoirReactNative";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quantum.app/quantum";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDF0C67EAFC222F77B82E670 /* Pods-NoirReactNative-NoirReactNativeTests.release.xcconfig */;
+			baseConfigurationReference = 161F90A02A826BF1B923C3CB /* Pods-quantum-quantumTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = NoirReactNativeTests/Info.plist;
+				INFOPLIST_FILE = quantumTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,28 +611,29 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NoirReactNativeTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "quantumTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoirReactNative.app/NoirReactNative";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quantum.app/quantum";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 809497316BDFB11B16180969 /* Pods-NoirReactNative.debug.xcconfig */;
+			baseConfigurationReference = D3F7F1A373E4519750629796 /* Pods-quantum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = NoirReactNative/NoirReactNative.entitlements;
+				CODE_SIGN_ENTITLEMENTS = quantum/quantum.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H2V2B3BCGM;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = NoirReactNative/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Noir React Native";
+				INFOPLIST_FILE = quantum/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = quantum;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,14 +646,15 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.noirreactnative.app;
-				PRODUCT_NAME = NoirReactNative;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quantumchat.app;
+				PRODUCT_NAME = quantum;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "NoirReactNative-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "quantum-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -589,17 +664,17 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC70EFB85C6D2E3A728A5931 /* Pods-NoirReactNative.release.xcconfig */;
+			baseConfigurationReference = 4A5A0B5D94A11E8A8685331D /* Pods-quantum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = NoirReactNative/NoirReactNative.entitlements;
+				CODE_SIGN_ENTITLEMENTS = quantum/quantum.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H2V2B3BCGM;
-				INFOPLIST_FILE = NoirReactNative/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Noir React Native";
+				INFOPLIST_FILE = quantum/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = quantum;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,14 +687,15 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.noirreactnative.app;
-				PRODUCT_NAME = NoirReactNative;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quantumchat.app;
+				PRODUCT_NAME = quantum;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "NoirReactNative-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "quantum-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -703,7 +779,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
-				USE_HERMES = true;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = false;
 			};
 			name = Debug;
 		};
@@ -776,7 +853,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
-				USE_HERMES = true;
+				USE_HERMES = false;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -784,7 +861,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NoirReactNativeTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "quantumTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -793,7 +870,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NoirReactNative" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "quantum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -802,7 +879,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NoirReactNative" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Quantum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

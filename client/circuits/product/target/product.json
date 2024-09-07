@@ -15,7 +15,7 @@
   "file_map": {
     "55": {
       "source": "fn main(a: Field, b: Field, result: pub Field) {\n    assert(a * b == result);\n}\n\n#[test]\nfn test_main() {\n    main(2, 5, 10);\n}\n",
-      "path": "/Users/madztheo/Documents/Wagmi/Studio/RnD/Docaproof/noir-libs/NoirReactNative/circuits/product/src/main.nr"
+      "path": "/Users/madztheo/Documents/Wagmi/Studio/RnD/Docaproof/noir-libs/quantum/circuits/product/src/main.nr"
     }
   },
   "names": ["main"]

@@ -1,4 +1,4 @@
-package com.noirreactnative
+package com.quantum
 
 import android.view.View
 import com.facebook.react.ReactPackage

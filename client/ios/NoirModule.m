@@ -1,6 +1,6 @@
 //
 //  NoirModule.m
-//  NoirReactNative
+//  quantum
 //
 //  Created by Theo Madzou on 21/02/2024.
 //
