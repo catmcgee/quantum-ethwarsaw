@@ -4,71 +4,41 @@ import { useRoute } from '@react-navigation/native';
 
 export default function ChatDetail() {
   const route = useRoute();
-  const { conversation, xmtpClient } = route.params;
+  const { conversation } = route.params;
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (xmtpClient && conversation) {
-      fetchMessages();
-      const stream = streamMessages();
-      return () => {
-        if (stream) {
-          stream.return();
-        }
-      };
-    }
-  }, [xmtpClient, conversation]);
+    // Fake messages for the conversation
+    const fakeMessages = [
+      { id: '1', senderAddress: '0x1234...5678', content: 'Hey, how are you?', sent: new Date() },
+      { id: '2', senderAddress: '0x9876...5432', content: 'Doing well! How about you?', sent: new Date() },
+      { id: '3', senderAddress: '0x1234...5678', content: 'Not bad, just been busy with work.', sent: new Date() },
+    ];
+    setMessages(fakeMessages.reverse());
+  }, [conversation]);
 
-  const fetchMessages = async () => {
-    try {
-      const msgs = await conversation.messages();
-      setMessages(msgs.reverse());
-      setLoading(false);
-    } catch (error) {
-      console.error('Error fetching messages:', error);
-      setLoading(false);
-    }
-  };
+  const sendMessage = () => {
+    if (!newMessage.trim()) return;
 
-  const streamMessages = async () => {
-    try {
-      const stream = await conversation.streamMessages();
-      for await (const message of stream) {
-        setMessages((prevMessages) => [message, ...prevMessages]);
-      }
-    } catch (error) {
-      console.error('Error streaming messages:', error);
-    }
-  };
+    const newMsg = {
+      id: String(Date.now()),
+      senderAddress: 'You',
+      content: newMessage,
+      sent: new Date(),
+    };
 
-  const sendMessage = async () => {
-    if (!newMessage.trim() || !xmtpClient) return;
-
-    try {
-      await conversation.send(newMessage);
-      setNewMessage('');
-    } catch (error) {
-      console.error('Error sending message:', error);
-    }
+    setMessages((prevMessages) => [newMsg, ...prevMessages]);
+    setNewMessage('');
   };
 
   const renderMessageItem = ({ item }) => (
-    <View style={styles.messageItem}>
-      <Text style={styles.messageSender}>{item.senderAddress === conversation.peerAddress ? 'Peer' : 'You'}</Text>
+    <View style={[styles.messageItem, item.senderAddress === 'You' ? styles.myMessage : styles.peerMessage]}>
+      <Text style={styles.messageSender}>{item.senderAddress === 'You' ? 'You' : 'Peer'}</Text>
       <Text style={styles.messageContent}>{item.content}</Text>
       <Text style={styles.messageTime}>{new Date(item.sent).toLocaleString()}</Text>
     </View>
   );
-
-  if (loading) {
-    return (
-      <View style={styles.container}>
-        <Text>Loading messages...</Text>
-      </View>
-    );
-  }
 
   return (
     <View style={styles.container}>
@@ -104,11 +74,17 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   messageItem: {
-    backgroundColor: 'white',
     padding: 10,
     borderRadius: 8,
     marginBottom: 10,
     maxWidth: '80%',
+  },
+  myMessage: {
+    backgroundColor: '#d1e7ff',
+    alignSelf: 'flex-end',
+  },
+  peerMessage: {
+    backgroundColor: 'white',
     alignSelf: 'flex-start',
   },
   messageSender: {
