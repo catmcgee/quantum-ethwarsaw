@@ -12,6 +12,11 @@ import Home from './pages/Home';
 import LoginWithWallet from './pages/LoginWithWallet';
 import ChatDashboard from './pages/ChatDashboard';
 import ChatDetail from './pages/ChatDetail';
+import Settings from './pages/Settings';
+import CredentialList from './pages/CredentialList';
+import CredentialVerification from './pages/CredentialVerification';
+import GroupChatList from './pages/GroupChatList';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -54,7 +59,7 @@ function App(): React.JSX.Element {
             <Stack.Screen 
               name="ChatDashboard" 
               component={ChatDashboard}
-              options={{ title: 'Chats' }}
+              options={{ headerShown: false }}
             />
             <Stack.Screen 
               name="ChatDetail" 
@@ -63,6 +68,26 @@ function App(): React.JSX.Element {
                 title: route.params?.conversation?.peerAddress || 'Chat'
               })}
             />
+            <Stack.Screen 
+              name="Settings" 
+              component={Settings}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen 
+              name="GroupChatList" 
+              component={GroupChatList}
+              options={{ headerShown: false }}
+            />
+             <Stack.Screen 
+              name="CredentialList" 
+              component={CredentialList}
+              options={{ headerShown: false }}
+            />
+             <Stack.Screen 
+              name="CredentialVerification" 
+              component={CredentialVerification}
+              options={{ headerShown: false }}
+            />
           </Stack.Navigator>
           <Web3Modal />
         </NavigationContainer>
@@ -70,5 +95,6 @@ function App(): React.JSX.Element {
     </WagmiConfig>
   );
 }
+
 
 export default App;

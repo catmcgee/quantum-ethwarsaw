@@ -11,9 +11,9 @@ export default function ChatDetail() {
   useEffect(() => {
     // Fake messages for the conversation
     const fakeMessages = [
-      { id: '1', senderAddress: '0x1234...5678', content: 'Hey, how are you?', sent: new Date() },
-      { id: '2', senderAddress: '0x9876...5432', content: 'Doing well! How about you?', sent: new Date() },
-      { id: '3', senderAddress: '0x1234...5678', content: 'Not bad, just been busy with work.', sent: new Date() },
+      { id: '1', senderAddress: '0x1234...5678', content: 'heyegmgmgmgmg', sent: new Date() },
+      { id: '2', senderAddress: '0x9876...5432', content: 'test', sent: new Date() },
+      { id: '3', senderAddress: '0x1234...5678', content: 'lol does it work', sent: new Date() },
     ];
     setMessages(fakeMessages.reverse());
   }, [conversation]);
@@ -34,7 +34,7 @@ export default function ChatDetail() {
 
   const renderMessageItem = ({ item }) => (
     <View style={[styles.messageItem, item.senderAddress === 'You' ? styles.myMessage : styles.peerMessage]}>
-      <Text style={styles.messageSender}>{item.senderAddress === 'You' ? 'You' : 'Peer'}</Text>
+      <Text style={styles.messageSender}>{item.senderAddress === 'You' ? 'You' : '0x1234...5678'}</Text>
       <Text style={styles.messageContent}>{item.content}</Text>
       <Text style={styles.messageTime}>{new Date(item.sent).toLocaleString()}</Text>
     </View>
