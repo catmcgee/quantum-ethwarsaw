@@ -1,6 +1,6 @@
-# Quantum
+<img src="./assets/logo.png" alt="Logo" width="300" height="auto">
 
-![Logo](./assets/logo.png)
+# Quantum
 
 ### Small voices inspire big changes
 
