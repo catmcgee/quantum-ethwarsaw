@@ -18,6 +18,8 @@ Quantum has three main features:
 
 You can find the pitch deck [here](https://www.canva.com/design/DAGQE83ArOs/YV_Lh-MQ4Ln2WobN9ju1Mg/edit?utm_content=DAGQE83ArOs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
+Or watch a very rushed video of me [demoing](https://www.canva.com/design/DAGQE83ArOs/x5OopTDSN0ovWWgAmiLjsw/view?utm_content=DAGQE83ArOs&utm_campaign=designshare&utm_medium=link&utm_source=recording_view).
+
 ## How it works + tech stack
 
 ### Zero knowledge proofs
