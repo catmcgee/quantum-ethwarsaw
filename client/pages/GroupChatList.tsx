@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, FlatList, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { ethers } from 'ethers';
-import contractABI from './contractABI.json';
+import contractABI from '../../contracts/contracts/artifacts/contracts/CredentialRegistry.sol/CredentialRegistry.json';
 
-const CONTRACT_ADDRESS = 'CONTRACT_ADDRESS';
+const CONTRACT_ADDRESS = '0x3fa591F1f12beB7F04dc39Cb6D2bFdb438055D8C';
 
 export default function GroupChatList() {
   const navigation = useNavigation();

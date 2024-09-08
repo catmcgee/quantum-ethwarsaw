@@ -1,4 +1,8 @@
 // SPDX-License-Identifier: MIT
+// sepolia: 0xC6c92158bF61fE3acb034D760479BCDE0f39c85f
+// mantle:
+// celo: 0xC6c92158bF61fE3acb034D760479BCDE0f39c85f
+// zircuit: 0xC6c92158bF61fE3acb034D760479BCDE0f39c85f
 pragma solidity ^0.8.0;
 
 import "./JournalistSBT.sol";
@@ -26,7 +30,6 @@ contract SoulboundMinting {
         zkPassportVerifier = IVerifier(_zkPassportVerifier);
     }
 
-    // Function to mint Journalist or Irish Citizen NFT after verification
     function mintSoulboundNFT(
         bytes calldata _proof,
         bytes32[] calldata _publicInputs,

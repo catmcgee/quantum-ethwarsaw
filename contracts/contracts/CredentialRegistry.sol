@@ -1,4 +1,8 @@
 // SPDX-License-Identifier: MIT
+// sepolia: 
+// mantle:
+// celo: 0x3fa591F1f12beB7F04dc39Cb6D2bFdb438055D8C
+// zircuit: 0x3fa591F1f12beB7F04dc39Cb6D2bFdb438055D8C
 pragma solidity ^0.8.0;
 
 contract CredentialRegistry {
